@@ -1,6 +1,13 @@
 import React, { useState } from "react";
-import { Login } from "./pages/Login";
-import { Register } from "./pages/Register";
+import Login from "./pages/Auth/Login";
+import Register from "./pages/Auth/Register";
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect,
+  } from "react-router-dom";
+import Main from './pages/Main/Main.jsx';
 import './App.css';
 
 function App() {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './Auth.css';
-import './../App.css';
+import './../../App.css';
 
-export const Register = (props) => {
+const Register = (props) => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [name, setName] = useState('');
@@ -28,3 +28,5 @@ export const Register = (props) => {
     </div>
     )
 }
+
+export default Register

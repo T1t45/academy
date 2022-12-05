@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import './Auth.css';
-import './../App.css';
+import './../../App.css';
 
-export const Login = (props) => {
+const Login = (props) => {
+
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
@@ -24,3 +25,5 @@ export const Login = (props) => {
         </div>
     )
 }
+
+export default Login
