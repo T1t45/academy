@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./App.css";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import './App.css';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -11,10 +11,13 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {
-       currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
-      }
+    <div className="Page">
+      <h1 className="title">Skolų valdymo sistema</h1>
+      <div className="AuthForm">
+       {
+         currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Register onFormSwitch={toggleForm} />
+        }
+      </div>
     </div>
   );
 }
